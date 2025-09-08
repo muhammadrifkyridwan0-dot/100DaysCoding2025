@@ -20,3 +20,6 @@ public static void main (String [] args) {
 
  System.out.printf ("nama saya %s, umur saya %d, nama, umur);
  
+}
+
+}
