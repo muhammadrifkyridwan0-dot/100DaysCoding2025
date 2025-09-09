@@ -1,6 +1,6 @@
 package Rifky;
 
-public class output
+public class output {
 
 public static void main (String [] args) {
 
@@ -18,7 +18,7 @@ public static void main (String [] args) {
  String nama = "Muhammad Rifky Ridwan";
  int umur = 20;
 
- System.out.printf ("nama saya %s, umur saya %d, nama, umur);
+ System.out.printf ("nama saya %s, umur saya %d%, nama, umur);
  
 }
 
