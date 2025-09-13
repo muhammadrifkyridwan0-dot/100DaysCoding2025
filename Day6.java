@@ -1,7 +1,7 @@
 package Rifky;
 public class FloatingPoint {
 
-public static void main (String[] args);
+public static void main (String[] args) {
 
 // *Floating point*
 /*Floating point adalah tipe data yang digunakan 
