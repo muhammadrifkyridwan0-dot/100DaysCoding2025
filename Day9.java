@@ -6,11 +6,11 @@ public class ContohVariabel {
         int x;
         
         // Inisialisasi variabel
-        x = 15;
+        x = 0;
         System.out.println("Nilai x awal: " + x);
         
         // Update variabel
-        x = 30;
+        x = 50;
         System.out.println("Nilai x setelah diupdate: " + x);
     }
 }
