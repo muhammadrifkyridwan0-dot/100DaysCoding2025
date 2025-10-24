@@ -1,49 +1,44 @@
 package rifky;
-
 import java.util.Scanner;
 
-public class KalkulatorSwitch {
+public class MenentukanHari {
     public static void main(String[] args) {
-        Scanner p = new Scanner(System.in);
-     
+        Scanner input = new Scanner(System.in);
 
-        // Input dari pengguna
-        System.out.print("Masukkan angka pertama: ");
-        double angka1 = p.nextDouble();
+        System.out.print("Masukkan angka (1-7): ");
+        int angka = input.nextInt();
 
-        System.out.print("Masukkan operator (+, -, *, /): ");
-        char operator = p.next().charAt(0);
+        String hari;
 
-        System.out.print("Masukkan angka kedua: ");
-        double angka2 = p.nextDouble();
-
-        double hasil;
-        // Proses menggunakan switch case
-        switch (operator) {
-            case '+':
-                hasil = angka1 + angka2;
-                System.out.println("Hasil: " + hasil);
+        switch (angka) {
+            case 1:
+                hari = "Senin";
                 break;
-            case '-':
-                hasil = angka1 - angka2;
-                System.out.println("Hasil: " + hasil);
+            case 2:
+                hari = "Selasa";
                 break;
-            case '*':
-                hasil = angka1 * angka2;
-                System.out.println("Hasil: " + hasil);
+            case 3:
+                hari = "Rabu";
                 break;
-            case '/':
-                if (angka2 != 0) {
-                    hasil = angka1 / angka2;
-                    System.out.println("Hasil: " + hasil);
-                } else {
-                    System.out.println("Error: Pembagian dengan nol tidak diperbolehkan!");
-                }
+            case 4:
+                hari = "Kamis";
+                break;
+            case 5:
+                hari = "Jumat";
+                break;
+            case 6:
+                hari = "Sabtu";
+                break;
+            case 7:
+                hari = "Minggu";
                 break;
             default:
-                System.out.println("Operator tidak dikenal!");
+                hari = "Angka tidak valid! Masukkan antara 1 sampai 7.";
+                break;
         }
 
-       
+        System.out.println("Hari ke-" + angka + " adalah: " + hari);
+
+        input.close();
     }
 }
