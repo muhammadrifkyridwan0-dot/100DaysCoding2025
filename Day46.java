@@ -1,43 +1,49 @@
-package rifky; 
+package rifky;
+
 import java.util.Scanner;
 
-public class MenentukanHari {
+public class MembuatMenu {
     public static void main(String[] args) {
-        Scanner p = new Scanner(System.in);
-
-        System.out.print("Masukkan angka (1-7): ");
-        int angka = p.nextInt();
-
-        String hari;
-
-        switch (angka) {
-            case 1:
-                hari = "Senin";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=== MENU TOKO HELLO WORLD ===");
+        System.out.println("1. Roti -- Rp5.000");
+        System.out.println("2. Matcha -- Rp25.000");
+        System.out.println("3. Kopi -- Rp15.000");
+        System.out.println("4. Teh -- Rp12.000");
+        
+        System.out.print("Masukkan pilihan anda disini^^: ");
+        int menu = sc.nextInt();
+        int harga = 0;
+        
+        switch (menu){
+            case 1 :
+                harga = 5000;
+                System.out.println("Anda membeli Roti seharga Rp" + harga);
+                System.out.println("Terimakasih sudah berbelanja:)");
                 break;
-            case 2:
-                hari = "Selasa";
+            case 2 :
+                harga = 25000;
+                System.out.println("Anda membeli Matcha seharga Rp" + harga);
+                System.out.println("Terimakasih sudah berbelanja:)");
                 break;
-            case 3:
-                hari = "Rabu";
+                
+            case 3 :
+                harga = 15000;
+                System.out.println("Anda membeli Kopi seharga Rp" + harga);
+                System.out.println("Terimakasih sudah berbelanja:)");
                 break;
-            case 4:
-                hari = "Kamis";
+            
+            case 4 :
+                harga = 12000;
+                System.out.println("Anda membeli Teh seharga Rp" + harga);
+                System.out.println("Terimakasih sudah berbelanja:)");
                 break;
-            case 5:
-                hari = "Jumat";
-                break;
-            case 6:
-                hari = "Sabtu";
-                break;
-            case 7:
-                hari = "Minggu";
-                break;
-            default:
-                hari = "Angka tidak valid! Masukkan antara 1 sampai 7.";
-                break;
+                
+            default :
+                 System.out.println("Maaf, plihan anda tidak tersedia pada menu:(");
+                 break;
+            
         }
-
-        System.out.println("Hari ke-" + angka + " adalah: " + hari);
-      
     }
-}
+    
+    }
