@@ -1,7 +1,7 @@
 package rifky;
 import java.util.Scanner;
 
-public class java {
+public class DoWhile {
     public static void main(String[] args) {
         
         Scanner p = new Scanner(System.in);
