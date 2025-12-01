@@ -15,11 +15,10 @@ public class MaximalArray {
           for (int i = 0; i < b; i++) {
           a[i] = p.nextInt();
 
-          if (b < max || max == 0) {
-          max = a[i];
-
-        }
-
+          if (a[i] > max) {
+              max = a[i];
+          }
+        
       }
       System.out.println("Nilai maksimal: + max);
     }
