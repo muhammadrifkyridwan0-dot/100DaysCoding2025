@@ -10,7 +10,7 @@ public class MaximalArray {
           int b p.nextInt();
           int a[] = new int[b];
   
-          int min = 0;
+          int min = a[0];
 
           for (int i = 0; i < b; i++) {
           a[i] = p.nextInt();
