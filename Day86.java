@@ -16,10 +16,10 @@ public class MaximalArray {
           a[i] = p.nextInt();
 
           if (a[i] < min) {
-              max = a[i];
+              min = a[i];
           }
         
       }
-      System.out.println("Nilai maksimal: " + min);
+      System.out.println("Nilai minimal: " + min);
     }
 }
