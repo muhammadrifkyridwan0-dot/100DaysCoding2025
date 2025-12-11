@@ -9,8 +9,8 @@ public class CetakDenganParameter {
 
     public static void main(String[] args) {
 
-        cetakPesan("Riduu", 20);
-        cetakPesan("Fuad", 23);
-        cetakPesan("Amba", 25);
+        LatihanCetakVoid("Riduu", 20);
+        LatihanCetakVoid("Fuad", 23);
+        LatihanCetakVoid("Amba", 25);
     }
 }
